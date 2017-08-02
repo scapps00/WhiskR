@@ -62,7 +62,7 @@ app.post("/login", function(req, res, next) {
 			});
 		} else {
 			id = user._id;
-			res.sendFile("/test.html");
+			res.redirect("test.html");
 		}
 	})(req, res, next);
 });
