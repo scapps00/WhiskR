@@ -1,10 +1,8 @@
 import React from "react";
 
 import Random from "./Random.js";
-//woo
-const axios = require("axios");
 
-const key = require("../../../../keys.js");
+const axios = require("axios");
 
 export default class Query extends React.Component {
 
@@ -63,7 +61,7 @@ export default class Query extends React.Component {
 	findAnimals(randomPets) {
 		let random = Math.floor(1000 * Math.random());
 		let url = "http://api.petfinder.com/pet.find";
-		url += "?key=" + key;
+		url += "?key=5974a8605d2508662e64c88fa5150fb9";
 		url += "&animal=";
 		url += $("input:checked").attr("id");
 		url += "&location=";
