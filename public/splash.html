@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Mobile Compatibility and screen re-sizing-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- react script -->
+    <script src="https://fb.me/react-15.2.1.js"></script>
+    <!-- react dom script-->
+    <script src="https://fb.me/react-dom-15.2.1.js"></script>
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Font Awesome CSS Icons for glyphicons-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Google Fonts Link-->
+    <link href="">
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>WhiskR Splash Page</title>
+</head>
+
+<body>
+    <div class="jumbotron" id="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4"><img class="center-block" src="./images/WhiskR400.png"></div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </div>
+    <div class="centered">
+        <button class="btn btn-large btn-primary" type="button">Login</button>
+    </div>
+
+const formInstance = (
+  <Form horizontal>
+    <FormGroup controlId=“formHorizontalEmail”>
+      <Col componentClass={ControlLabel} sm={2}>
+        Email
+      </Col>
+      <Col sm={10}>
+        <FormControl type=“email” placeholder=“Email” />
+      </Col>
+    </FormGroup>
+
+   <FormGroup controlId=“formHorizontalPassword”>
+      <Col componentClass={ControlLabel} sm={2}>
+        Password
+      </Col>
+      <Col sm={10}>
+        <FormControl type=“password” placeholder=“Password” />
+      </Col>
+    </FormGroup>
+
+
+   <FormGroup>
+      <Col smOffset={2} sm={10}>
+        <Button type=“submit”>
+          Sign in
+        </Button>
+      </Col>
+    </FormGroup>
+  </Form>
+);
+    
+</body>
+
+</html>
