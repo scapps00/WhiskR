@@ -15,7 +15,7 @@ const SavedPets = require("./models/SavedPets.js");
 const User = require("./models/user.js");//JM added this 7/29
 mongoose.Promise = Promise;
 
-mongoose.connect("mongodb://localhost:27017");
+mongoose.connect("mongodb://heroku_vmqqgqz9:lp2s75apukle8jkb3oir04g6s9@ds161262.mlab.com:61262/heroku_vmqqgqz9");
 var db = mongoose.connection;
 
 db.on("error", function(error) {
